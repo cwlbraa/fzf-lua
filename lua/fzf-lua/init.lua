@@ -73,7 +73,7 @@ function M.setup_highlights(override)
     { "FzfLuaFilePart", "file_part",
       {
         default = default,
-        link = utils.__HAS_NVIM_08 and "@none" or "Normal",
+        link = utils.__HAS_NVIM_08 and not is_light and "@none" or "Normal",
       }
     },
     -- Fzf terminal hls, colors from `vim.api.nvim_get_color_map()`
